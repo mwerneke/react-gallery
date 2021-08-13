@@ -1,6 +1,6 @@
-.items{
+.items, .count, .buttons{
 
-    display:inline-block;
+    display:block
+    
 
-}
 }

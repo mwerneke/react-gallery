@@ -1,4 +1,7 @@
 import {useState} from 'react'
+import './GalleryItem.css'
+import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
+
 function GalleryItem({
     picture
 }) {
@@ -11,14 +14,20 @@ function GalleryItem({
     }
 
     return (
+       <>
+       
        <div className='items'>
-           <img src ={picture.path}/>{picture.description}{picture.likes}
-            <h4>Likes:{count}</h4> 
-           <button onClick={onButtonClick}>Like</button>
+           <img src ={picture.path}/>
+        </div>
+            <div className= 'count'>
+                <h4>Likes:{count}</h4> 
+            </div>
+            <div className='buttons'>
+                <button onClick={onButtonClick}><ThumbUpAltIcon/></button>
            </div>
+        </>
     )
 }
 
 export default GalleryItem;
 
-//<h4>Likes:{count}</h4>
