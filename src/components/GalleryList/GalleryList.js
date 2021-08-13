@@ -1,6 +1,6 @@
 import React from 'react'
 import './GalleryList.css'
-
+import ThumbsUp from '@material-ui/icons/ThumbUp';
 
 function GalleryList({galleryList}) {
     
@@ -14,7 +14,7 @@ function GalleryList({galleryList}) {
                 {galleryList.map((item)=>
                     <div className= 'column'>
                     <img className = 'image' src ={item.path}/>
-                    <button>Love it</button>
+                    <button><ThumbsUp/></button>
                     </div>
                 )}
             </div>
