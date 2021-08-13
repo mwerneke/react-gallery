@@ -19,11 +19,13 @@ function GalleryList({galleryList}) {
        <div>
             <div>
                 {galleryList.map((item, i)=>
-                    <div className= 'column'>
-                    <img  className = 'image' src ={item.path}/>
+                    <ul className= 'column'>
+                    <img src ={item.path}/>
+                    <div>
                     <button onClick={onButtonClick}><ThumbsUp/></button>
-                    <h4>Likes:{count}</h4>
                     </div>
+                    <h4>Likes:{count}</h4>
+                    </ul>
                     
                     
                     
