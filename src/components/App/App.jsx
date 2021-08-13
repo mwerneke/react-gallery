@@ -5,7 +5,9 @@ import GalleryList from '../GalleryList/GalleryList';
 import {useState, useEffect} from 'react'
 function App() {
 
+  
   const[galleryList, setGalleryList] = useState([]);
+  
 
   useEffect(()=>{
     console.log('In use Effect');
@@ -33,6 +35,7 @@ function App() {
         <p>Gallery goes here</p>
         <GalleryList 
           galleryList={galleryList}
+          //galleryItem={galleryItem}
         />
 
        
