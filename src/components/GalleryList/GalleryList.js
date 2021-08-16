@@ -2,30 +2,28 @@ import React from 'react'
 import {useState} from 'react'
 import GalleryItem from '../GalleryItem/GalleryItem';
 
-function GalleryList({galleryList}) {
+function GalleryList({galleryList, pictureLikes}) {
     
 
     
 
-    
+
     return (
-       
-       <div>
+
+        <div>
             <div>
-                {galleryList.map((picture)=>
-                    <ul >
-                    <GalleryItem 
-                        key={picture.id}
-                        picture={picture}
+                {galleryList.map((picture) =>
+                    <ul>
+                        <GalleryItem
+                            key={picture.id}
+                            picture={picture}
+                            pictureLikes={pictureLikes}
                         />
                     </ul>
-                    
-                    
-                    
                 )}
             </div>
         </div>
-        
+
     )
 }
 

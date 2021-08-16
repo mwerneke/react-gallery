@@ -1,6 +1,17 @@
-.items, .count, .buttons{
+/* .items,
+.buttons {
+  display: inline-block;
+  
+}
+.count {
+  font-family: "Roboto Slab", Serif;
+  font-size: 16px;
+} */
 
-    display:block
-    
-
+.format {
+  
+    width: 400px;
+    display: inline-block;
+    margin: 10px;
+  
 }
