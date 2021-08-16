@@ -4,22 +4,18 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 
 function GalleryList({galleryList, pictureLikes}) {
     
-
-    
-
-
     return (
 
         <div>
             <div>
                 {galleryList.map((picture) =>
-                    <ul>
+                    <div>
                         <GalleryItem
                             key={picture.id}
                             picture={picture}
                             pictureLikes={pictureLikes}
                         />
-                    </ul>
+                    </div>
                 )}
             </div>
         </div>

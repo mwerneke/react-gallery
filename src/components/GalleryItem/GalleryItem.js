@@ -14,23 +14,14 @@ function GalleryItem({
         setIsHidden(!isHidden);
     }
 
-    //let [count, setCount] = useState(0);
-    //const onButtonClick = () => {
-    //    setCount(count + 1);
-    //    console.log('On Button Click', count);
-//
-    //}
-
-
-
     return (
 
         <div className='format'>
-            <div className='items'>
                 <div onClick={handleHide}>{isHidden ? (
-                    <div>
+                    <div className ='items'>
                         <img src={picture.path} />
                     </div>
+
                 ) : (
                     <div>
                         <div className='Description'>
@@ -44,9 +35,9 @@ function GalleryItem({
                     <h4>Likes:{picture.likes}</h4>
                 </div>
                 <div className='buttons'>
-                    <button onClick={()=> pictureLikes(picture.id)}><ThumbUpAltIcon /></button>
+                    <button onClick={() => pictureLikes(picture.id)}><ThumbUpAltIcon /></button>
                 </div>
-            </div>
+            
         </div>
     )
 }
