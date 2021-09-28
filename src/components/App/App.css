@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  background-color:rgb(159, 165, 150);
-  
+  background-color: rgb(159, 165, 150);
 }
 
 .App-header {
@@ -12,7 +11,6 @@
 }
 
 .App-title {
-  Font-Family: 'Ruda', Sans-Serif;
-  Font-Size: 48px;
+  font-family: "Ruda", Sans-Serif;
+  font-size: 48px;
 }
-

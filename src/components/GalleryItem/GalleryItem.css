@@ -1,10 +1,7 @@
-
 .format:hover {
-    background-color: darkkhaki;
-    cursor: pointer; 
-    display: inline-block;
-    align-items: center; 
-    width: 300px; 
-     
+  background-color: darkkhaki;
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  width: 300px;
 }
-
