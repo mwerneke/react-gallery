@@ -1,10 +1,10 @@
 
-.format {
-  
-    width: 400px;
+.format:hover {
+    background-color: darkkhaki;
+    cursor: pointer; 
     display: inline-block;
-    margin: 10px;
-    
-   
-  
+    align-items: center; 
+    width: 300px; 
+     
 }
+

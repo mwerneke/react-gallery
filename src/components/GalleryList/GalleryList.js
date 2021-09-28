@@ -2,8 +2,10 @@ import React from 'react'
 import {useState} from 'react'
 import GalleryItem from '../GalleryItem/GalleryItem';
 
+
 function GalleryList({galleryList, pictureLikes}) {
     
+
     return (
 
         <div>
@@ -16,6 +18,7 @@ function GalleryList({galleryList, pictureLikes}) {
                             pictureLikes={pictureLikes}
                         />
                     </div>
+                    
                 )}
             </div>
         </div>

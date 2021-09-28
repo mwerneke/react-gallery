@@ -17,8 +17,9 @@ function GalleryItem({
     return (
 
         <div className='format'>
+            <div className='items'>
                 <div onClick={handleHide}>{isHidden ? (
-                    <div className ='items'>
+                    <div>
                         <img src={picture.path} />
                     </div>
 
@@ -37,7 +38,7 @@ function GalleryItem({
                 <div className='buttons'>
                     <button onClick={() => pictureLikes(picture.id)}><ThumbUpAltIcon /></button>
                 </div>
-            
+            </div>
         </div>
     )
 }

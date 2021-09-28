@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList';
 import { useState, useEffect } from 'react'
+import Example from '../Example/Example.jsx';
 
 function App() {
 
@@ -41,10 +42,7 @@ const pictureLikes = (id) =>{
       <header className="App-header">
         <h1 className="App-title">Kids at a Glance</h1>
       </header>
-      <GalleryList
-        galleryList={galleryList}
-        pictureLikes={pictureLikes}
-      />
+    <Example/>
     </div>
   );
 }
